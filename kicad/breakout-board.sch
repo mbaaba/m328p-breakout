@@ -1,0 +1,614 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:breakout-board-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Atmega 328 P Brakout-Board"
+Date "1.6.2016"
+Rev "0.1"
+Comp "Mbaaba"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA328-P IC1
+U 1 1 568D613D
+P 3040 2150
+F 0 "IC1" H 2290 3400 50  0000 L BNN
+F 1 "ATMEGA328-P" H 3440 750 50  0000 L BNN
+F 2 "Housings_DIP:DIP-28_W7.62mm" H 3040 2150 50  0000 C CIN
+F 3 "" H 3040 2150 50  0000 C CNN
+	1    3040 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 568D6273
+P 1840 3350
+F 0 "#PWR01" H 1840 3100 50  0001 C CNN
+F 1 "GND" H 1840 3200 50  0000 C CNN
+F 2 "" H 1840 3350 50  0000 C CNN
+F 3 "" H 1840 3350 50  0000 C CNN
+	1    1840 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 568D62A0
+P 1840 850
+F 0 "#PWR02" H 1840 700 50  0001 C CNN
+F 1 "+5V" H 1840 990 50  0000 C CNN
+F 2 "" H 1840 850 50  0000 C CNN
+F 3 "" H 1840 850 50  0000 C CNN
+	1    1840 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 568D63CD
+P 2140 1350
+F 0 "#PWR03" H 2140 1200 50  0001 C CNN
+F 1 "+5V" H 2140 1490 50  0000 C CNN
+F 2 "" H 2140 1350 50  0000 C CNN
+F 3 "" H 2140 1350 50  0000 C CNN
+	1    2140 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 568D6438
+P 7330 2210
+F 0 "R1" V 7410 2210 50  0000 C CNN
+F 1 "10K" V 7330 2210 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Vertical_RM5mm" V 7260 2210 50  0001 C CNN
+F 3 "" H 7330 2210 50  0000 C CNN
+	1    7330 2210
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR04
+U 1 1 568D64E1
+P 7480 2210
+F 0 "#PWR04" H 7480 2060 50  0001 C CNN
+F 1 "+5V" H 7480 2350 50  0000 C CNN
+F 2 "" H 7480 2210 50  0000 C CNN
+F 3 "" H 7480 2210 50  0000 C CNN
+	1    7480 2210
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_02X03 P9
+U 1 1 568D6509
+P 7440 1550
+F 0 "P9" H 7440 1750 50  0000 C CNN
+F 1 "6Pin Connector" H 7610 1340 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 7440 350 50  0001 C CNN
+F 3 "" H 7440 350 50  0000 C CNN
+	1    7440 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 568D6628
+P 7190 1650
+F 0 "#PWR05" H 7190 1400 50  0001 C CNN
+F 1 "GND" V 7230 1470 50  0000 C CNN
+F 2 "" H 7190 1650 50  0000 C CNN
+F 3 "" H 7190 1650 50  0000 C CNN
+	1    7190 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR06
+U 1 1 568D6644
+P 7190 1450
+F 0 "#PWR06" H 7190 1300 50  0001 C CNN
+F 1 "+5V" V 7220 1640 50  0000 C CNN
+F 2 "" H 7190 1450 50  0000 C CNN
+F 3 "" H 7190 1450 50  0000 C CNN
+	1    7190 1450
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7690 1450 2    60   Input ~ 0
+MISO
+Text GLabel 7690 1550 2    60   Input ~ 0
+SCK
+Text GLabel 7690 1650 2    60   Input ~ 0
+RESET
+Text GLabel 7180 2210 0    60   Input ~ 0
+RESET
+Text GLabel 7190 1550 0    60   Input ~ 0
+MOSI
+Text GLabel 4040 1350 2    60   Input ~ 0
+MOSI
+Text GLabel 4040 1450 2    60   Input ~ 0
+MISO
+Text GLabel 4040 1550 2    60   Input ~ 0
+SCK
+$Comp
+L C C3
+U 1 1 568D6CB7
+P 8410 3120
+F 0 "C3" V 8550 3080 50  0000 L CNN
+F 1 "22pF" V 8290 3260 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 8448 2970 50  0001 C CNN
+F 3 "" H 8410 3120 50  0000 C CNN
+	1    8410 3120
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 568D6E6B
+P 6960 3120
+F 0 "#PWR07" H 6960 2870 50  0001 C CNN
+F 1 "GND" H 6870 2990 50  0000 C CNN
+F 2 "" H 6960 3120 50  0000 C CNN
+F 3 "" H 6960 3120 50  0000 C CNN
+	1    6960 3120
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 568D6E8D
+P 8560 3120
+F 0 "#PWR08" H 8560 2870 50  0001 C CNN
+F 1 "GND" H 8650 2990 50  0000 C CNN
+F 2 "" H 8560 3120 50  0000 C CNN
+F 3 "" H 8560 3120 50  0000 C CNN
+	1    8560 3120
+	1    0    0    -1  
+$EndComp
+Text Notes 6790 1210 0    60   ~ 0
+ISP Connector
+$Comp
+L Crystal Y1
+U 1 1 568D6A24
+P 7770 2840
+F 0 "Y1" H 7770 2990 50  0000 C CNN
+F 1 "16MHz" H 7780 2690 50  0000 C CNN
+F 2 "Crystals:Crystal_HC50-U_Vertical" H 7770 2840 50  0001 C CNN
+F 3 "" H 7770 2840 50  0000 C CNN
+	1    7770 2840
+	1    0    0    -1  
+$EndComp
+Text GLabel 7620 2840 0    60   Input ~ 0
+XTAL1
+Text GLabel 7920 2840 2    60   Input ~ 0
+XTAL2
+Text GLabel 4040 1650 2    60   Input ~ 0
+XTAL1
+Text GLabel 4040 1750 2    60   Input ~ 0
+XTAL2
+Text GLabel 4040 2500 2    60   Input ~ 0
+RESET
+$Comp
+L CONN_01X04 P4
+U 1 1 568D8ABA
+P 5280 1360
+F 0 "P4" H 5280 1610 50  0000 C CNN
+F 1 "Conn_1" V 5380 1360 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 5280 1360 50  0001 C CNN
+F 3 "" H 5280 1360 50  0000 C CNN
+	1    5280 1360
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P2
+U 1 1 568D8BC4
+P 5220 2750
+F 0 "P2" H 5220 3000 50  0000 C CNN
+F 1 "Conn_3" V 5320 2750 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 5220 2750 50  0001 C CNN
+F 3 "" H 5220 2750 50  0000 C CNN
+	1    5220 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P5
+U 1 1 568D8D5A
+P 6210 1890
+F 0 "P5" H 6210 2140 50  0000 C CNN
+F 1 "Conn_5" V 6310 1890 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 6210 1890 50  0001 C CNN
+F 3 "" H 6210 1890 50  0000 C CNN
+	1    6210 1890
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P6
+U 1 1 568D8D99
+P 6210 2440
+F 0 "P6" H 6210 2690 50  0000 C CNN
+F 1 "Conn_6" V 6310 2440 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 6210 2440 50  0001 C CNN
+F 3 "" H 6210 2440 50  0000 C CNN
+	1    6210 2440
+	1    0    0    -1  
+$EndComp
+Text GLabel 6030 1420 0    60   Input ~ 0
+MOSI
+Text GLabel 5020 2900 0    60   Input ~ 0
+PB0
+Text GLabel 6030 1220 0    60   Input ~ 0
+PB1
+Text GLabel 6030 1320 0    60   Input ~ 0
+PB2
+Text GLabel 4040 1050 2    60   Input ~ 0
+PB0
+Text GLabel 4040 1150 2    60   Input ~ 0
+PB1
+Text GLabel 4040 1250 2    60   Input ~ 0
+PB2
+Text GLabel 6030 1520 0    60   Input ~ 0
+MISO
+Text GLabel 6010 1740 0    60   Input ~ 0
+SCK
+Text GLabel 5060 2200 0    60   Input ~ 0
+XTAL1
+Text GLabel 5060 2300 0    60   Input ~ 0
+XTAL2
+Text GLabel 6010 1940 0    60   Input ~ 0
+PC0
+Text GLabel 4040 1900 2    60   Input ~ 0
+PC0
+Text GLabel 5080 1210 0    60   Input ~ 0
+RESET
+Text GLabel 6010 2040 0    60   Input ~ 0
+PC1
+Text GLabel 4040 2000 2    60   Input ~ 0
+PC1
+Text GLabel 6010 2290 0    60   Input ~ 0
+PC2
+Text GLabel 4040 2100 2    60   Input ~ 0
+PC2
+Text GLabel 6010 2390 0    60   Input ~ 0
+PC3
+Text GLabel 4040 2200 2    60   Input ~ 0
+PC3
+Text GLabel 6010 2490 0    60   Input ~ 0
+PC4
+Text GLabel 4040 2300 2    60   Input ~ 0
+PC4
+Text GLabel 6010 2590 0    60   Input ~ 0
+PC5
+Text GLabel 4040 2400 2    60   Input ~ 0
+PC5
+Text GLabel 5080 1310 0    60   Input ~ 0
+PD0
+Text GLabel 4040 2650 2    60   Input ~ 0
+PD0
+Text GLabel 5080 1410 0    60   Input ~ 0
+PD1
+Text GLabel 4040 2750 2    60   Input ~ 0
+PD1
+Text GLabel 5080 1510 0    60   Input ~ 0
+PD2
+Text GLabel 4040 2850 2    60   Input ~ 0
+PD2
+Text GLabel 5080 1830 0    60   Input ~ 0
+PD3
+Text GLabel 4040 2950 2    60   Input ~ 0
+PD3
+Text GLabel 5080 1930 0    60   Input ~ 0
+PD4
+Text GLabel 4040 3050 2    60   Input ~ 0
+PD4
+Text GLabel 5020 2600 0    60   Input ~ 0
+PD5
+Text GLabel 4040 3150 2    60   Input ~ 0
+PD5
+Text GLabel 5020 2700 0    60   Input ~ 0
+PD6
+Text GLabel 4040 3250 2    60   Input ~ 0
+PD6
+Text GLabel 5020 2800 0    60   Input ~ 0
+PD7
+Text GLabel 4040 3350 2    60   Input ~ 0
+PD7
+$Comp
+L GND #PWR09
+U 1 1 568DB8F4
+P 1080 3210
+F 0 "#PWR09" H 1080 2960 50  0001 C CNN
+F 1 "GND" H 1080 3060 50  0000 C CNN
+F 2 "" H 1080 3210 50  0000 C CNN
+F 3 "" H 1080 3210 50  0000 C CNN
+	1    1080 3210
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR010
+U 1 1 568DB9A8
+P 1080 3110
+F 0 "#PWR010" H 1080 2960 50  0001 C CNN
+F 1 "+5V" H 1080 3250 50  0000 C CNN
+F 2 "" H 1080 3110 50  0000 C CNN
+F 3 "" H 1080 3110 50  0000 C CNN
+	1    1080 3110
+	-1   0    0    -1  
+$EndComp
+Text Notes 1260 2880 2    60   ~ 0
+Power
+$Comp
+L PWR_FLAG #FLG011
+U 1 1 568DC3F0
+P 1840 850
+F 0 "#FLG011" H 1840 945 50  0001 C CNN
+F 1 "PWR_FLAG" H 1840 1030 50  0000 C CNN
+F 2 "" H 1840 850 50  0000 C CNN
+F 3 "" H 1840 850 50  0000 C CNN
+	1    1840 850 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X04 P7
+U 1 1 568DCB7F
+P 6230 1370
+F 0 "P7" H 6230 1620 50  0000 C CNN
+F 1 "Conn_4" V 6330 1370 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 6230 1370 50  0001 C CNN
+F 3 "" H 6230 1370 50  0000 C CNN
+	1    6230 1370
+	1    0    0    -1  
+$EndComp
+Text GLabel 6010 1840 0    60   Input ~ 0
+AREF
+Text GLabel 2140 1650 0    60   Input ~ 0
+AREF
+$Comp
+L PWR_FLAG #FLG012
+U 1 1 568DD7E9
+P 1840 3350
+F 0 "#FLG012" H 1840 3445 50  0001 C CNN
+F 1 "PWR_FLAG" H 1840 3530 50  0000 C CNN
+F 2 "" H 1840 3350 50  0000 C CNN
+F 3 "" H 1840 3350 50  0000 C CNN
+	1    1840 3350
+	0    -1   -1   0   
+$EndComp
+Text Notes 6820 2730 0    60   ~ 0
+Clock
+$Comp
+L C C2
+U 1 1 568D6C7A
+P 7110 3120
+F 0 "C2" V 7250 3070 50  0000 L CNN
+F 1 "22pF" V 7050 2860 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 7148 2970 50  0001 C CNN
+F 3 "" H 7110 3120 50  0000 C CNN
+	1    7110 3120
+	0    1    1    0   
+$EndComp
+Text GLabel 7260 3120 2    60   Input ~ 0
+XTAL1
+Text GLabel 8260 3120 0    60   Input ~ 0
+XTAL2
+$Comp
+L CONN_01X02 P3
+U 1 1 568FDE7D
+P 5260 2250
+F 0 "P3" H 5260 2400 50  0000 C CNN
+F 1 "Conn_2b" V 5360 2250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 5260 2250 50  0001 C CNN
+F 3 "" H 5260 2250 50  0000 C CNN
+	1    5260 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P8
+U 1 1 568FE621
+P 5280 1880
+F 0 "P8" H 5280 2030 50  0000 C CNN
+F 1 "Conn_2b" V 5380 1880 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 5280 1880 50  0001 C CNN
+F 3 "" H 5280 1880 50  0000 C CNN
+	1    5280 1880
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER JP1
+U 1 1 569009B3
+P 2488 4098
+F 0 "JP1" H 2488 4248 50  0000 C CNN
+F 1 "JUMPER" H 2488 4018 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM15mm" H 2488 4098 50  0001 C CNN
+F 3 "" H 2488 4098 50  0000 C CNN
+	1    2488 4098
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 568DB809
+P 880 3160
+F 0 "P1" H 880 3310 50  0000 C CNN
+F 1 "CONN_01X02" V 980 3160 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 880 3160 50  0001 C CNN
+F 3 "" H 880 3160 50  0000 C CNN
+	1    880  3160
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2140 3250 1840 3250
+Wire Wire Line
+	1840 2300 1840 3350
+Wire Wire Line
+	2140 1050 1840 1050
+Wire Wire Line
+	1840 850  1840 2000
+Connection ~ 1840 1050
+Connection ~ 1840 3250
+Wire Wire Line
+	1840 3350 2140 3350
+Wire Notes Line
+	6770 1230 6770 1900
+Wire Notes Line
+	6770 1900 8210 1900
+Wire Notes Line
+	8210 1900 8210 1110
+Wire Notes Line
+	8210 1110 6770 1110
+Wire Notes Line
+	6770 1110 6770 1250
+Wire Notes Line
+	6770 2590 6770 3380
+Wire Notes Line
+	6770 3380 8800 3380
+Wire Notes Line
+	8800 3380 8800 2800
+Wire Notes Line
+	5630 1040 5630 2050
+Wire Notes Line
+	6610 1040 6610 2050
+Wire Notes Line
+	1290 2780 1290 3440
+Wire Notes Line
+	1290 3440 700  3440
+Wire Notes Line
+	700  3440 700  2780
+Wire Notes Line
+	700  2780 1290 2780
+Wire Notes Line
+	6780 2080 6780 2370
+Wire Notes Line
+	6780 2370 7690 2370
+Wire Notes Line
+	7690 2370 7690 2070
+Wire Notes Line
+	7690 2070 6780 2070
+Wire Notes Line
+	6770 2590 8800 2590
+Wire Notes Line
+	8800 2590 8800 2810
+$Comp
+L GND #PWR013
+U 1 1 56902ACD
+P 2188 4098
+F 0 "#PWR013" H 2188 3848 50  0001 C CNN
+F 1 "GND" H 2188 3948 50  0000 C CNN
+F 2 "" H 2188 4098 50  0000 C CNN
+F 3 "" H 2188 4098 50  0000 C CNN
+	1    2188 4098
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 56902B08
+P 2788 4098
+F 0 "#PWR014" H 2788 3848 50  0001 C CNN
+F 1 "GND" H 2788 3948 50  0000 C CNN
+F 2 "" H 2788 4098 50  0000 C CNN
+F 3 "" H 2788 4098 50  0000 C CNN
+	1    2788 4098
+	-1   0    0    -1  
+$EndComp
+$Comp
+L JUMPER JP2
+U 1 1 56902C7A
+P 1114 2046
+F 0 "JP2" H 1114 2196 50  0000 C CNN
+F 1 "JUMPER" H 1114 1966 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM15mm" H 1114 2046 50  0001 C CNN
+F 3 "" H 1114 2046 50  0000 C CNN
+	1    1114 2046
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR015
+U 1 1 56902D67
+P 814 2046
+F 0 "#PWR015" H 814 1896 50  0001 C CNN
+F 1 "+5V" H 814 2186 50  0000 C CNN
+F 2 "" H 814 2046 50  0000 C CNN
+F 3 "" H 814 2046 50  0000 C CNN
+	1    814  2046
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR016
+U 1 1 56902E04
+P 1414 2046
+F 0 "#PWR016" H 1414 1896 50  0001 C CNN
+F 1 "+5V" H 1414 2186 50  0000 C CNN
+F 2 "" H 1414 2046 50  0000 C CNN
+F 3 "" H 1414 2046 50  0000 C CNN
+	1    1414 2046
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 568D630B
+P 1840 2150
+F 0 "C1" H 1865 2250 50  0000 L CNN
+F 1 "100mF" H 1865 2050 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 1878 2000 50  0001 C CNN
+F 3 "" H 1840 2150 50  0000 C CNN
+	1    1840 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER JP3
+U 1 1 5690380E
+P 1348 4038
+F 0 "JP3" H 1348 4188 50  0000 C CNN
+F 1 "JUMPER" H 1348 3958 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM15mm" H 1348 4038 50  0001 C CNN
+F 3 "" H 1348 4038 50  0000 C CNN
+	1    1348 4038
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 569038E0
+P 1048 4038
+F 0 "#PWR017" H 1048 3788 50  0001 C CNN
+F 1 "GND" H 1048 3888 50  0000 C CNN
+F 2 "" H 1048 4038 50  0000 C CNN
+F 3 "" H 1048 4038 50  0000 C CNN
+	1    1048 4038
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 56903921
+P 1648 4038
+F 0 "#PWR018" H 1648 3788 50  0001 C CNN
+F 1 "GND" H 1648 3888 50  0000 C CNN
+F 2 "" H 1648 4038 50  0000 C CNN
+F 3 "" H 1648 4038 50  0000 C CNN
+	1    1648 4038
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC
